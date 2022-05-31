@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="561.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab5.Controllers.Service.ServiceEditController">
+   <children>
+      <AnchorPane fx:id="topPane" layoutX="31.0" layoutY="56.0" prefHeight="200.0" prefWidth="385.0">
+         <children>
+            <ComboBox fx:id="cmbId" editable="true" layoutX="108.0" layoutY="62.0" prefWidth="150.0" />
+            <Label layoutX="138.0" layoutY="32.0" text="Название услуги" />
+            <Button fx:id="btnFound" layoutX="134.0" layoutY="117.0" mnemonicParsing="false" onAction="#btnFoundClick" prefHeight="53.0" prefWidth="99.0" text="Найти" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane" layoutX="37.0" layoutY="256.0" prefHeight="216.0" prefWidth="372.0" visible="false">
+         <children>
+            <TextField fx:id="txtTitle" layoutX="99.0" layoutY="48.0" />
+            <Label layoutX="134.0" layoutY="14.0" text="Название услуги" />
+            <TextField fx:id="txtCost" layoutX="105.0" layoutY="108.0" />
+            <Label layoutX="131.0" layoutY="80.0" text="Стоимость услуги" />
+            <Button fx:id="btnAdd" layoutX="122.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnAddClick" prefHeight="54.0" prefWidth="85.0" text="Изменить" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnClose" layoutX="161.0" layoutY="486.0" mnemonicParsing="false" onAction="#btnCloseClick" prefHeight="61.0" prefWidth="84.0" text="На главную" />
+      <Label fx:id="errorLog" layoutX="37.0" layoutY="21.0" />
+   </children>
+</AnchorPane>
